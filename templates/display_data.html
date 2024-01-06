@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display_data</title>
+</head>
+<body>
+    <center>
+        <h1>Database_data</h1>
+        <table border="3px">
+            <tr>
+                <th>Sname</th>
+                <th>Sage</th>
+                <th>Spassword</th>
+                <th>Sgender</th>
+                <th>courses</th>
+                <th>Saddress</th>
+            </tr>
+          {% for i in data %}
+            <tr>
+                <td>{{i.sname}}</td>
+                <td>{{i.sage}}</td>
+                <td>{{i.spassword}}</td>
+                <td>{{i.Sgender}}</td>
+                <td>{{i.Courses}}</td>
+                <td>{{i.saddress}}</td>
+            </tr>
+          {% endfor %}
+        </table>
+    </center>
+    
+</body>
+</html>
